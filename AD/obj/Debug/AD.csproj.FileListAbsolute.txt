@@ -1,0 +1,5 @@
+D:\BAC\BAC\AD\bin\Debug\AD.dll
+D:\BAC\BAC\AD\bin\Debug\AD.pdb
+D:\BAC\BAC\AD\obj\Debug\AD.dll
+D:\BAC\BAC\AD\obj\Debug\AD.pdb
+D:\BAC\BAC\AD\obj\Debug\AD.csprojResolveAssemblyReference.cache

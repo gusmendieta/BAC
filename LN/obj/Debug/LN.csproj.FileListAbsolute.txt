@@ -1,0 +1,7 @@
+D:\BAC\BAC\LN\bin\Debug\LN.dll
+D:\BAC\BAC\LN\bin\Debug\LN.pdb
+D:\BAC\BAC\LN\bin\Debug\AD.dll
+D:\BAC\BAC\LN\bin\Debug\AD.pdb
+D:\BAC\BAC\LN\obj\Debug\LN.csprojResolveAssemblyReference.cache
+D:\BAC\BAC\LN\obj\Debug\LN.dll
+D:\BAC\BAC\LN\obj\Debug\LN.pdb
