@@ -24,6 +24,9 @@ namespace Proyecto.APP
         public static String ConsultarCategoriaProductos()
         {
             ClsCategoriaProductosAD log = new ClsCategoriaProductosAD();
+
+            var UNO = "1";
+
             ClsData DataJSon = new ClsData();
 
             return DataJSon.fGetJson(log.ConsultarCategoriaProductos());
