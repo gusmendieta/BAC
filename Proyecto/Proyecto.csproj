@@ -222,6 +222,7 @@
     <Content Include="APP\FileUploadHandler.ashx" />
     <None Include="Project_Readme.html" />
     <Content Include="APP\Site.Mobile.Master" />
+    <None Include="Properties\PublishProfiles\BAC.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\popper.min.js.map" />
     <None Include="Web.Debug.config">

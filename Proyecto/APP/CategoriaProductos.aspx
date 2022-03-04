@@ -32,7 +32,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <i id="btnSave" class="fa fa-floppy-o fa-3x text-danger" title="Guardar"></i>
+                    <i id="btnSave" class="fa fa-floppy-o fa-3x text-danger" style="cursor:pointer" title="Guardar"></i>
 
                 </div>
 
@@ -51,6 +51,11 @@
     </section>
     <hr />
     
+    <section >
+        <h5>Filtros
+        </h5>
+
+    </section>
     <div class="row fa-border">
         <div class="col-md-4">
             <div class="form-group">
@@ -67,20 +72,24 @@
         <div class="col-md-4">
             <div class="form-group">
                 <label class="control-label">Filtrar</label><br />
-                <i id="btnFiltro"  class="fa fa-filter fa-2x text-danger"></i>
+                <i id="btnFiltro"style="cursor:pointer"  class="fa fa-filter fa-2x text-danger"></i>
             </div>
         </div>
     </div>
-    <div style="float: right">
-      
-    </div>
+    <br />
+    <section class="text-center">
+        <h4>Lista de Categorías
+        </h4>
+
+    </section>
+    <hr />
 
     <div class="row">
         <div class="table-responsive">
             <table id="tbCategorias" class="table table-striped  dt-responsive nowrap">
                 <thead>
                     <tr>
-                        <th><i id="btnNuevo" style="width: 5%;" title="Nueva Categoría" class="fa fa-plus fa-2x text-danger"></i></th>
+                        <th><i id="btnNuevo" style="width: 5%; cursor:pointer" title="Nueva Categoría" class="fa fa-plus fa-2x text-danger"></i></th>
                         <th>Descripción</th>
                         <th>Estado</th>
                         <th>Editar</th>

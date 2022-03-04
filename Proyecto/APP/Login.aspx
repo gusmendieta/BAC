@@ -28,7 +28,7 @@
         <label for="inputUser" class="sr-only">Usuario</label>
         <input id="inputUser" type="text" class="form-control cajatexto" placeholder="Usuario" autocomplete="off" />
         <label for="inputPassword" class="sr-only">Contraseña</label>
-        <input id="inputPassword" type="text" class="form-control cajatexto" placeholder="Contraseña" autocomplete="off" />
+        <input id="inputPassword" type="password" class="form-control cajatexto" placeholder="Contraseña" autocomplete="off" />
 
 
         <button class="btn btn-lg bt btn-block mt-3 btn-primary cajatexto" type="button" id="iniciarSesion" value="Log in">Iniciar Sesión</button>
@@ -102,7 +102,7 @@
 
             </div>
             <div class="modal-footer">
-                <i id="btnSave" class="fa fa-sign-in fa-3x text-danger" title="Guardar"></i>
+                <i id="btnSave" class="fa fa-sign-in fa-3x text-danger" style="cursor:pointer" title="Guardar"></i>
 
             </div>
 

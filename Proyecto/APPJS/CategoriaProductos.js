@@ -184,7 +184,7 @@ var ConsultarCategoriXcodCategoria = function (codCategoriaProductos) {
             });
         },
         error: function (xhr, ajaxOptions, thrownError) {
-            toastr.error("Ocurrio un error al intentar consultar el Reclamo!!!");
+            toastr.error("Ocurrio un error al intentar consultar los datos!!!");
         }
     })
 }

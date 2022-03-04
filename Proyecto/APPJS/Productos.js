@@ -36,9 +36,6 @@ var initButtons = function () {
     $("#btnNuevo").click(function () {
         NuevaProdcuto();
     });
-    $("#btnNuevo").click(function () {
-        NuevaProdcuto();
-    });
 
     $("#file").change(function (event) {
         loadFile(event);
@@ -222,7 +219,7 @@ var ConsultarProductos = function () {
                         '<td>' + v.Precio + '</td>' +
                         '<td>' + act + '</td>' +
                         '<td>' + '<img src="../Imagenes/'+v.imagen+'" width="50" height="50"/>' + '</td>' +
-                        '<td>' + '<i id="editBtn" title="Editar" data-id="' + v.codProducto + '" class="EditRow fa fa-pencil-square fa-2x text-primary"></i>' + '</td>'
+                        '<td>' + '<i id="editBtn" title="Editar" data-id="' + v.codProducto + '" class="EditRow fa fa-pencil-square fa-2x text-primary"  style="cursor:pointer"></i>' + '</td>'
 
                 row += '</tr>';
             });
@@ -362,6 +359,16 @@ var limpiarValores = function () {
     $("#selectCategoria").prop('disabled', false);
     $("#selectCategoria").selectpicker('refresh');
     $("#FilesP").val("0");
+
+
+    $('#Drop').empty();
+    $('#Drop').append('<div id="dDropZone" class="dropzone needsclick dz-clickable" style="color: black;">' +
+                                '<div class="dz-message needsclick">' +
+                                    '<span>Arrastre el archivo hasta aca, o haga click aqui para subirlo.</span>' +
+                                '</div>' +
+                      '</div>');
+
+    initDropZone();
 }
 
 var initDropZone = function () {

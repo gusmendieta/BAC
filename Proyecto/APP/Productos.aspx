@@ -48,19 +48,22 @@
                     <div class="row">
                         <div class="col-md-12 " id="Drop">
                             <p>
-                                <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
-                            <p> 
-                                  <label class="control-label">Subir Imagen</label><br />
-                                <label for="file" class="fa fa-cloud-upload fa-3x text-success" style="cursor: pointer;"></label></p>
+                                <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+                            </p>
                             <p>
-                                <img id="output" width="200" /></p>
+                                <label class="control-label">Subir Imagen</label><br />
+                                <label for="file" class="fa fa-cloud-upload fa-3x text-success" style="cursor: pointer;"></label>
+                            </p>
+                            <p>
+                                <img id="output" width="200" />
+                            </p>
                         </div>
 
                     </div>
 
                 </div>
                 <div class="modal-footer">
-                    <i id="btnSave" class="fa fa-floppy-o fa-3x text-danger" title="Guardar"></i>
+                    <i id="btnSave" class="fa fa-floppy-o fa-3x text-danger" style="cursor: pointer" title="Guardar"></i>
 
                 </div>
 
@@ -79,6 +82,11 @@
     </section>
     <hr />
 
+    <section >
+        <h5>Filtros
+        </h5>
+
+    </section>
     <div class="row fa-border">
         <div class="col-md-3">
             <div class="form-group">
@@ -101,19 +109,24 @@
         <div class="col-md-3">
             <div class="form-group">
                 <label class="control-label">Filtrar</label><br />
-                <i id="btnFiltro" class="fa fa-filter fa-2x text-danger"></i>
+                <i id="btnFiltro" class="fa fa-filter fa-2x text-danger" style="cursor: pointer"></i>
             </div>
         </div>
     </div>
-    <div style="float: right">
-    </div>
 
+     <br />
+    <section class="text-center">
+        <h4>Lista de Productos
+        </h4>
+
+    </section>
+    <hr />
     <div class="row">
         <div class="table-responsive">
             <table id="tbProductos" class="table table-striped  dt-responsive nowrap">
                 <thead>
                     <tr>
-                        <th><i id="btnNuevo" style="width: 5%;" title="Nuevo Producto" class="fa fa-plus fa-2x text-danger"></i></th>
+                        <th><i id="btnNuevo" style="width: 5%; cursor: pointer" title="Nuevo Producto" class="fa fa-plus fa-2x text-danger"></i></th>
                         <th>Categoría</th>
                         <th>Producto</th>
                         <th>Precio</th>
@@ -130,7 +143,7 @@
 
     <input id="inputcodProducto" type="hidden" value="" />
     <input id="hdVista" type="hidden" value="0" />
-     <input id="FilesP" type="hidden" value="0" />
+    <input id="FilesP" type="hidden" value="0" />
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
