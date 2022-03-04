@@ -26,3 +26,43 @@ input[type="password"] {
         padding: 0;
     }
 }
+
+
+/*****************login***************/
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    
+    
+}
+
+
+.sing {
+       display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+   background-color: rgb(181,32,0);
+  position:relative;
+  width:90vw;
+  height: 90vh;
+  margin: auto;
+}
+
+
+.contenedor{
+	
+    box-shadow: 2px 9px 48px -1px rgb(0 0 0 / 75%);
+    border-radius: 5px;
+}
+
+.cajatexto{
+    margin:auto;
+    margin-top:5%;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/

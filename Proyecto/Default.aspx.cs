@@ -11,7 +11,12 @@ namespace Proyecto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            var user = HttpContext.Current.Session["user"];
 
+            if (user == null)
+            {
+                Response.Redirect("~/APP/Login.aspx");
+            }
         }
     }
 }

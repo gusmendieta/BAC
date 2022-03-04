@@ -64,8 +64,6 @@ D:\BAC\BAC\Proyecto\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dl
 D:\BAC\BAC\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
 D:\BAC\BAC\Proyecto\obj\Debug\Proyecto.dll
 D:\BAC\BAC\Proyecto\obj\Debug\Proyecto.pdb
-D:\BAC\BAC\Proyecto\bin\LN.dll
-D:\BAC\BAC\Proyecto\bin\LN.pdb
 D:\BAC\BAC\Proyecto\bin\AD.dll
 D:\BAC\BAC\Proyecto\bin\AD.pdb
 D:\BAC\BAC\Proyecto\obj\Debug\Proyecto.Properties.Resources.resources

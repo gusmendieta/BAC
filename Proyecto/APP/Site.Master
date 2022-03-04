@@ -8,9 +8,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+         <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+     <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Scripts/alertify.min.css" rel="stylesheet" />
+    <link href="../Scripts/dropzone/css/dropzone.css" rel="stylesheet" />
+    <link href="../Scripts/bootstrap-select.css" rel="stylesheet" />
+    
+    <link href="../Content/toastr.css" rel="stylesheet" />
     <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/jquery") %>
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
@@ -18,7 +27,7 @@
     <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
-    <form runat="server">
+    <form runat="server" style="background-color:rgb(204,204,204);">
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -40,7 +49,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#00367F">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,43 +57,48 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Nombre de la aplicación</a>
+                    <a class="navbar-brand" runat="server" href="~/" style="color:white" >BAC LATAM</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
+                        <li><a runat="server" href="~/APP/CategoriaProductos.aspx">Categoría Prod.</a></li>
+                        <li><a runat="server" href="~/APP/Productos.aspx">Productos</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Registrarse</a></li>
-                                <li><a runat="server" href="~/Account/Login">Iniciar sesión</a></li>
+                                <li><a class="fa fa-power-off fu fa-2x"  title="Cerrar Sesión" href="/APP/Login.aspx"></a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
                         </LoggedInTemplate>
                     </asp:LoginView>
                 </div>
             </div>
         </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        <div class="container body-content contenedor" style="padding:2%;background-color:white;">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+            
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - BAC - LATAM</p>
             </footer>
         </div>
     </form>
     <script src="../Scripts/jQuery-2.2.0.min.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+       <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/popper.js"></script>
+<script src="../Scripts/toastr.js"></script>
+    <script src="../Scripts/alertify.min.js"></script>
+    <script src="../Scripts/bootbox.min.js"></script>
+    <script src="../Scripts/dropzone/js/dropzone.js"></script>
+    <script src="../Scripts/bootstrap-select.js"></script>
+     <!-- jQuery UI 1.11.4 -->
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
     <asp:ContentPlaceHolder id="scripts" runat="server">
         
 
